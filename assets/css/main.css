@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root  {
+    --orange: #eb6f00;
+    --blue: #004c99;
+}
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: normal;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+
+    max-width: 90%;
+    margin-inline: auto;
+}
+
+.wrapper {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-name {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.product-name h1 {
+
+    color: var(--blue);
+    font-size: 4vh;
+    border-bottom: solid var(--orange) 3px;
+}
+
+.product-image {
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.product-image img {
+
+    width: 350px;
+}
+
+.product-description {
+
+    display: flex;
+    justify-content: center;
+}
+
+.product-description p {
+
+    color: var(--blue);
+    font-size: 2vh;
+    width: 90%;
+}
+
+.warranty {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.warranty h2 {
+
+    color: var(--blue);
+
+}
+
+.warranty span {
+
+    color: var(--blue);
+    font-size: 2.5vh;
+}
+
+.warranty img {
+
+    width: 50px;
+}
+
+.obs {
+
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.obs h3 {
+
+    color: var(--blue);
+    font-size: 2.3vh;
+}
+
+.obs span {
+
+    color: var(--blue);
+    font-size: 2vh;
+}
+
+.title-h2 {
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 25px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title-h2 h2 {
+
+    border-bottom: solid var(--orange) 2px;
+    color: var(--blue);
+    font-size: 3.6vh;
+    text-transform: uppercase;
+}
+
+.inner-all {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+.inner-single {
+
+    width: 22%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.233);
+}
+
+.inner-name {
+
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.inner-name h2 {
+
+    font-size: 2vh;
+    color: var(--blue);
+}
+
+.inner-icon {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+}
+
+.inner-icon img {
+
+    width: 80px;
+}
+
+.inner-description {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100px;
+    text-align: center;
+}
+
+.inner-description p {
+
+    color: var(--blue);
+}
+
+.video-frame {
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.video-frame iframe {
+
+    width: 70%;
+    border: solid var(--orange) 2px;
+    height: 50vh;
+}
+
+.manual {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.title-h2 p {
+
+    color: var(--blue);
+    font-size: 2.5vh;
+}
+
+.title-h2 button {
+
+    width: 100%;
+    font-size: 2.5vh;
+    padding: 10px 20px;
+    background: var(--orange);
+    color: #FFF;
+    border: none;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 428px) {
+
+    .warranty {
+
+        flex-direction: column;
+    }
+
+    .obs {
+
+        flex-direction: column;
+    }
+
+    .obs h3, .obs span {
+
+        text-align: center;
+    }
+
+    .inner-single {
+
+        width: 100%;
+    }
+
+    .video-frame iframe {
+
+        width: 100%;
+        border: solid var(--orange) 2px;
+        height: 50vh;
+    }
+
+    .inner-name h2 {
+
+        font-size: 2.2vh;
+        color: var(--blue);
+    }
+}
+
+
+
+
+
